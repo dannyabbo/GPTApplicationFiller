@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "GPT Job Application Filler",
+  "version": "1.0",
+  "description": "Automatically fill out job applications using ChatGPT API.",
+  "permissions": ["activeTab", "storage", "scripting", "webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

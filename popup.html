@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GPT Job Application Filler</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>GPT Job Application Filler</h1>
+  <form id="configForm">
+    <label for="apiKey">API Key:</label>
+    <input type="text" id="apiKey" name="apiKey" required>
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".txt,.docx,.pdf" required>
+    <button type="submit">Save</button>
+  </form>
+  <button id="fillButton">Fill Application</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
